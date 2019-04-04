@@ -1,0 +1,42 @@
+# Created by https://www.gitignore.io/api/laravel,apachecordova
+
+001_src/
+*.mrk
+
+### ApacheCordova ###
+client/bin/*
+client/!/plugins
+client/!/plugins/android.json
+client/!/plugins/fetch.json
+client/plugins/*
+client/platforms/*
+client/node_modules/
+
+### ApacheCordova 2 ###
+client2/bin/*
+client2/!/plugins
+client2/!/plugins/android.json
+client2/!/plugins/fetch.json
+client2/plugins/*
+client2/platforms/*
+client2/node_modules/
+
+
+### Laravel ###
+server/vendor/
+server/bootstrap/cache/
+server/storage/
+server/public/cdn/
+server/node_modules/
+server/npm-debug.log
+server/public/storage
+server/public/hot
+server/storage/*.key
+server/.env.*.php
+server/.env.php
+server/.env
+server/Homestead.yaml
+server/Homestead.json
+server/.rocketeer/
+
+# End of https://www.gitignore.io/api/laravel,apachecordova
