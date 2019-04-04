@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CheQuin</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="x-ua-compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:300,400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Icons -->
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" media="all" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="vendor/jetpack/css/keyframes.css" rel="stylesheet" type="text/css">
+    <link href="vendor/jetpack/css/materialize.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/jetpack/css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="vendor/jetpack/css/swipebox.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/jetpack/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    </script>
+</head>
+
+  <body>
+    <div id="main"> <!-- Main Container -->
+
+      <!-- Sidebar -->
+      <ul id="slide-out" class="side-nav primary-color collapsible">
+        <li>
+          <div class="sidenav-header">
+            <!-- Avatar -->
+            <div class="nav-avatar">
+              <img id="avatar-logo" class="circle avatar" src="img/usericon.png" alt="">
+              <div class="avatar-body">
+                <h3>CheQuin</h3>
+                <p>Timbre Digital</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Menu -->
+        <li><a id="nav-sesion-togler" class="no-child" onclick="app.fbLogin();"><i class="ion-log-in"></i> Ingresar</a></li>       
+      </ul>
+      <!-- End of Sidebars -->
+
+      <!-- Toolbar -->
+      <div id="toolbar" class="primary-color">
+        <div class="title"><img class="logo" src="img/doorbell.png"> CheQuin</div>
+        <div class="open-right" id="open-right" data-activates="slide-out">
+          <i class="ion-android-menu"></i>
+        </div>
+      </div>
+      <!-- End of Toolbar -->
+      
+      <!-- Page Contents -->
+      <div id="main_wrapper" class="page animated fadeinright"></div> 
+      <!-- End of Page Contents -->
+
+      <!-- Modal Structure Bottom Sheet -->
+      <div id="modalTimbre" class="modal bottom-sheet">
+        <form>
+        <input type="hidden" name="timbre_id" id="timbre_id">
+        <div class="modal-content">
+          <h4>Timbre</h4>
+          <div class="input-field">
+            <input type="text" id="timbre_nombre" name="timbre_nombre">
+            <label for="timbre_nombre">Nombre</label>
+          </div>
+          <div class="input-field">
+              <input id="timbre_estado" name="timbre_estado" type="checkbox" />
+              <label for="timbre_estado">Estado</label>
+          </div>
+          <a class="waves-effect waves-light btn-large primary-color block mt2" onclick="app.guardarTimbre();">Guardar</a>
+          <a class="btn block mt2" onclick="app.eliminarTimbre();">Eliminar</a>
+        </div>
+        </form>
+      </div>
+
+      <!-- Floating Action Button -->
+      <div class="floating-button page-fab animated bouncein delay-3">
+        <span id="bt_timbre_nuevo" class="btn-floating btn-large waves-effect waves-light accent-color btn z-depth-1">
+          <i class="ion-plus"></i>
+        </span>
+      </div>
+
+    </div><!-- End of Main Container -->
+
+
+
+
+<script type="text/template" id="inicio">
+        <div class="p-20">
+            <div class="row"><div class="col-md-12"><h3 id="bienvenida">Bienvenide</h3></div></div>           
+            <div class="row">
+              <div id="div_lista_lugares"></div>
+            </div>  
+          <div id="wtimeline"><div class="timeline"></div></div>
+        </div> 
+</script>
+
+
+
+
+
+
+
+
+
+    
+    <script type="text/javascript" src="cordova.js"></script>   
+    <script type="text/javascript" src="vendor/jetpack/js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="vendor/underscore/underscore-min.js"></script>
+    <script type="text/javascript" src="vendor/backbone-1.3.3/backbone-min.js"></script>   
+    <script type="text/javascript" src="vendor/jetpack/js/jquery.swipebox.min.js"></script>   
+    <!--<script type="text/javascript" src="vendor/jetpack/js/jquery.smoothState.min.js"></script> -->
+    <script type="text/javascript" src="vendor/jetpack/js/materialize.min.js"></script> 
+    <script type="text/javascript" src="vendor/jetpack/js/swiper.min.js"></script>  
+    <script type="text/javascript" src="vendor/jetpack/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="vendor/jetpack/js/masonry.min.js"></script>
+    <script type="text/javascript" src="vendor/jetpack/js/chart.min.js"></script>
+    <script type="text/javascript" src="vendor/jetpack/js/functions_html.js"></script>
+    <script type="text/javascript" src="vendor/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="vendor/cookie/jquery.cookie.js"></script>
+    <script type="text/javascript" src="vendor/openfb/openfb.js"></script>
+    <script type="text/javascript" src="js/variables.js"></script>
+    <script type="text/javascript" src="js/helpers.js"></script>
+    <script type="text/javascript" src="js/router.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+
+  </body>
+</html>
